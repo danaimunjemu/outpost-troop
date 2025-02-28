@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+    <springProperty scope="context" name="appName" source="spring.application.name"/>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+
+    <appender name="FILE_HUMAN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/troop.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%yellow([%d{yyyy-MM-dd HH:mm:ss.SSS}]) %highlight(%-5level)
+                [%cyan(${appName}), %highlight(traceId)=%red(%X{traceId:-NONE}), %highlight(spanId)=%X{spanId:-NONE}] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>
+                logs/troop.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CONSOLE_HUMAN" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%yellow([%d{yyyy-MM-dd HH:mm:ss.SSS}]) %highlight(%-5level)
+                [%cyan(${appName}), %highlight(traceId)=%red(%X{traceId:-NONE}), %highlight(spanId)=%X{spanId:-NONE}] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE_HUMAN_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="CONSOLE_HUMAN"/>
+    </appender>
+
+    <appender name="FILE_HUMAN_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="FILE_HUMAN"/>
+    </appender>
+
+    <logger name="zw.co.afc.orbit" level="DEBUG"/>
+
+    <root level="INFO">
+        <appender-ref ref="FILE_HUMAN_ASYNC"/>
+        <appender-ref ref="CONSOLE_HUMAN_ASYNC"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,505 @@
+[33m[2025-02-28 10:19:10.130][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 58499 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-02-28 10:19:10.130][0;39m [39mDEBUG[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
+[33m[2025-02-28 10:19:10.131][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-02-28 10:19:10.997][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-02-28 10:19:11.044][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+[33m[2025-02-28 10:19:11.532][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
+[33m[2025-02-28 10:19:11.540][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:11.541][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-02-28 10:19:11.541][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
+[33m[2025-02-28 10:19:11.564][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-02-28 10:19:11.564][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1385 ms
+[33m[2025-02-28 10:19:11.826][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-02-28 10:19:11.997][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fee4278
+[33m[2025-02-28 10:19:11.997][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
+[33m[2025-02-28 10:19:12.102][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
+[33m[2025-02-28 10:19:12.263][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
+[33m[2025-02-28 10:19:12.348][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:12.397][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
+[33m[2025-02-28 10:19:12.400][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
+[33m[2025-02-28 10:19:12.405][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
+[33m[2025-02-28 10:19:12.406][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
+[33m[2025-02-28 10:19:12.448][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
+[33m[2025-02-28 10:19:12.451][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
+[33m[2025-02-28 10:19:12.508][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[33m[2025-02-28 10:19:12.546][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
+[33m[2025-02-28 10:19:12.566][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
+[33m[2025-02-28 10:19:12.734][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[33m[2025-02-28 10:19:13.337][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[33m[2025-02-28 10:19:13.338][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:13.645][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33m[2025-02-28 10:19:14.122][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
+[33m[2025-02-28 10:19:14.170][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:14.174][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[33m[2025-02-28 10:19:14.176][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:14.181][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown initiated...
+[33m[2025-02-28 10:19:14.189][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown completed.
+[33m[2025-02-28 10:19:14.217][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-02-28 10:19:14.232][0;39m [1;31mERROR[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8076 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8076 or configure this application to listen on another port.
+
+[33m[2025-02-28 10:19:19.828][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 58534 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-02-28 10:19:19.828][0;39m [39mDEBUG[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
+[33m[2025-02-28 10:19:19.829][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-02-28 10:19:20.648][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-02-28 10:19:20.688][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+[33m[2025-02-28 10:19:21.121][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
+[33m[2025-02-28 10:19:21.128][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:21.129][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-02-28 10:19:21.129][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
+[33m[2025-02-28 10:19:21.152][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-02-28 10:19:21.152][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1262 ms
+[33m[2025-02-28 10:19:21.381][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-02-28 10:19:21.524][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a0f87e5
+[33m[2025-02-28 10:19:21.524][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
+[33m[2025-02-28 10:19:21.628][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
+[33m[2025-02-28 10:19:21.780][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
+[33m[2025-02-28 10:19:21.852][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:21.885][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
+[33m[2025-02-28 10:19:21.894][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
+[33m[2025-02-28 10:19:21.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
+[33m[2025-02-28 10:19:21.917][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
+[33m[2025-02-28 10:19:21.919][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
+[33m[2025-02-28 10:19:21.974][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[33m[2025-02-28 10:19:22.003][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
+[33m[2025-02-28 10:19:22.022][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
+[33m[2025-02-28 10:19:22.175][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[33m[2025-02-28 10:19:22.736][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[33m[2025-02-28 10:19:22.738][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:23.026][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33m[2025-02-28 10:19:23.482][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
+[33m[2025-02-28 10:19:23.521][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:23.525][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[33m[2025-02-28 10:19:23.527][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:23.528][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown initiated...
+[33m[2025-02-28 10:19:23.531][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown completed.
+[33m[2025-02-28 10:19:23.548][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-02-28 10:19:23.561][0;39m [1;31mERROR[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8076 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8076 or configure this application to listen on another port.
+
+[33m[2025-02-28 10:19:32.575][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 58565 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-02-28 10:19:32.575][0;39m [39mDEBUG[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
+[33m[2025-02-28 10:19:32.576][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-02-28 10:19:34.553][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-02-28 10:19:34.621][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+[33m[2025-02-28 10:19:35.217][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
+[33m[2025-02-28 10:19:35.227][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:35.228][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-02-28 10:19:35.228][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
+[33m[2025-02-28 10:19:35.253][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-02-28 10:19:35.253][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 2316 ms
+[33m[2025-02-28 10:19:35.477][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-02-28 10:19:35.618][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@699d96bc
+[33m[2025-02-28 10:19:35.618][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
+[33m[2025-02-28 10:19:35.737][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
+[33m[2025-02-28 10:19:35.958][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
+[33m[2025-02-28 10:19:36.119][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:36.153][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
+[33m[2025-02-28 10:19:36.157][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:36.163][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
+[33m[2025-02-28 10:19:36.163][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
+[33m[2025-02-28 10:19:36.163][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
+[33m[2025-02-28 10:19:36.164][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
+[33m[2025-02-28 10:19:36.164][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
+[33m[2025-02-28 10:19:36.164][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
+[33m[2025-02-28 10:19:36.164][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
+[33m[2025-02-28 10:19:36.196][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
+[33m[2025-02-28 10:19:36.197][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
+[33m[2025-02-28 10:19:36.253][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[33m[2025-02-28 10:19:36.287][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
+[33m[2025-02-28 10:19:36.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
+[33m[2025-02-28 10:19:36.479][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[33m[2025-02-28 10:19:37.178][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[33m[2025-02-28 10:19:37.180][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:37.516][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33m[2025-02-28 10:19:37.987][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
+[33m[2025-02-28 10:19:38.040][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:38.044][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[33m[2025-02-28 10:19:38.045][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:38.047][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown initiated...
+[33m[2025-02-28 10:19:38.049][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown completed.
+[33m[2025-02-28 10:19:38.068][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-02-28 10:19:38.078][0;39m [1;31mERROR[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8076 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8076 or configure this application to listen on another port.
+
+[33m[2025-02-28 10:19:39.769][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 58616 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-02-28 10:19:39.770][0;39m [39mDEBUG[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
+[33m[2025-02-28 10:19:39.770][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-02-28 10:19:40.638][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-02-28 10:19:40.683][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+[33m[2025-02-28 10:19:41.386][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
+[33m[2025-02-28 10:19:41.395][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:41.396][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-02-28 10:19:41.396][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
+[33m[2025-02-28 10:19:41.418][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-02-28 10:19:41.418][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1600 ms
+[33m[2025-02-28 10:19:41.664][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-02-28 10:19:41.836][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fee4278
+[33m[2025-02-28 10:19:41.837][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
+[33m[2025-02-28 10:19:41.970][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
+[33m[2025-02-28 10:19:42.158][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
+[33m[2025-02-28 10:19:42.234][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:42.267][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
+[33m[2025-02-28 10:19:42.269][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
+[33m[2025-02-28 10:19:42.276][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
+[33m[2025-02-28 10:19:42.293][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
+[33m[2025-02-28 10:19:42.294][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
+[33m[2025-02-28 10:19:42.349][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[33m[2025-02-28 10:19:42.380][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
+[33m[2025-02-28 10:19:42.399][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
+[33m[2025-02-28 10:19:42.569][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[33m[2025-02-28 10:19:43.169][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[33m[2025-02-28 10:19:43.170][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:43.486][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33m[2025-02-28 10:19:43.949][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
+[33m[2025-02-28 10:19:44.001][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:44.010][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[33m[2025-02-28 10:19:44.011][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:44.013][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown initiated...
+[33m[2025-02-28 10:19:44.016][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown completed.
+[33m[2025-02-28 10:19:44.034][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-02-28 10:19:44.046][0;39m [1;31mERROR[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8076 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8076 or configure this application to listen on another port.
+
+[33m[2025-02-28 10:19:49.900][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 58660 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-02-28 10:19:49.901][0;39m [39mDEBUG[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
+[33m[2025-02-28 10:19:49.902][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-02-28 10:19:50.713][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-02-28 10:19:50.748][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+[33m[2025-02-28 10:19:51.291][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
+[33m[2025-02-28 10:19:51.299][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:51.300][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-02-28 10:19:51.300][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
+[33m[2025-02-28 10:19:51.325][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-02-28 10:19:51.325][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1362 ms
+[33m[2025-02-28 10:19:51.594][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-02-28 10:19:51.789][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a9bce99
+[33m[2025-02-28 10:19:51.790][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
+[33m[2025-02-28 10:19:51.940][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
+[33m[2025-02-28 10:19:52.160][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
+[33m[2025-02-28 10:19:52.254][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:52.297][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
+[33m[2025-02-28 10:19:52.300][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
+[33m[2025-02-28 10:19:52.305][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
+[33m[2025-02-28 10:19:52.385][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
+[33m[2025-02-28 10:19:52.386][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
+[33m[2025-02-28 10:19:52.459][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[33m[2025-02-28 10:19:52.500][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
+[33m[2025-02-28 10:19:52.520][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
+[33m[2025-02-28 10:19:52.698][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[33m[2025-02-28 10:19:53.392][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[33m[2025-02-28 10:19:53.394][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:54.700][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33m[2025-02-28 10:19:55.296][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
+[33m[2025-02-28 10:19:55.339][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
+[33m[2025-02-28 10:19:55.343][0;39m [31mWARN [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[33m[2025-02-28 10:19:55.345][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[33m[2025-02-28 10:19:55.346][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown initiated...
+[33m[2025-02-28 10:19:55.349][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Shutdown completed.
+[33m[2025-02-28 10:19:55.367][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-02-28 10:19:55.379][0;39m [1;31mERROR[0;39m
+                [[36mmta-txn-monitor-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8076 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8076 or configure this application to listen on another port.
+

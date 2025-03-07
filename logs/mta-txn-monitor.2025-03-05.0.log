@@ -1,82 +1,78 @@
-[33m[2025-03-06 08:45:05.878][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 30282 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
-[33m[2025-03-06 08:45:05.879][0;39m [39mDEBUG[0;39m
+[33m[2025-03-05 20:36:19.161][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting MtaMonitorApplication v0.0.1-SNAPSHOT using Java 19.0.1 with PID 21440 (/Users/danaimunjemu/Downloads/outpost-application/mta-monitor/target/mta-monitor-0.0.1-SNAPSHOT.jar started by danaimunjemu in /Users/danaimunjemu/Downloads/troop)
+[33m[2025-03-05 20:36:19.162][0;39m [39mDEBUG[0;39m
                 [[36mmta-txn-monitor-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.3.2, Spring v6.1.11
-[33m[2025-03-06 08:45:05.879][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:19.162][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
-[33m[2025-03-06 08:45:06.648][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.131][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[33m[2025-03-06 08:45:06.682][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
-[33m[2025-03-06 08:45:07.161][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.168][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+[33m[2025-03-05 20:36:20.727][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8076 (http)
-[33m[2025-03-06 08:45:07.169][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.735][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8076"]
-[33m[2025-03-06 08:45:07.170][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.736][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
-[33m[2025-03-06 08:45:07.170][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.736][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.26]
-[33m[2025-03-06 08:45:07.193][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.758][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
-[33m[2025-03-06 08:45:07.193][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1267 ms
-[33m[2025-03-06 08:45:07.398][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:20.758][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 1529 ms
+[33m[2025-03-05 20:36:21.058][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
-[33m[2025-03-06 08:45:07.637][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a9bce99
-[33m[2025-03-06 08:45:07.637][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.249][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4be12f6c
+[33m[2025-03-05 20:36:21.249][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Start completed.
-[33m[2025-03-06 08:45:07.761][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.454][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Set default schema name to public
-[33m[2025-03-06 08:45:07.910][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.648][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading resource: liquibase/changelogs/14-01-changelog.yaml
-[33m[2025-03-06 08:45:07.998][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.750][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
-[33m[2025-03-06 08:45:08.027][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.799][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Database is up to date, no changesets to execute
-[33m[2025-03-06 08:45:08.030][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.800][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Reading from public.databasechangelog
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - UPDATE SUMMARY
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Run:                          0
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Previously run:               5
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Filtered out:                 0
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - -------------------------------
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Total change sets:            5
-[33m[2025-03-06 08:45:08.035][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.806][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Update summary generated
-[33m[2025-03-06 08:45:08.060][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.871][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Successfully released change log lock
-[33m[2025-03-06 08:45:08.061][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.873][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Command execution complete
-[33m[2025-03-06 08:45:08.140][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.950][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000204: Processing PersistenceUnitInfo [name: default]
-[33m[2025-03-06 08:45:08.176][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:21.991][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000412: Hibernate ORM core version 6.5.2.Final
-[33m[2025-03-06 08:45:08.194][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:22.016][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000026: Second-level cache disabled
-[33m[2025-03-06 08:45:08.373][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:22.191][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No LoadTimeWeaver setup: ignoring JPA class transformer
-[33m[2025-03-06 08:45:08.932][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:22.814][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[33m[2025-03-06 08:45:08.934][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:22.815][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[33m[2025-03-06 08:45:09.215][0;39m [31mWARN [0;39m
+[33m[2025-03-05 20:36:23.123][0;39m [31mWARN [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[33m[2025-03-06 08:45:09.640][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:23.630][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Exposing 16 endpoints beneath base path '/admin'
-[33m[2025-03-06 08:45:09.678][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:23.674][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting ProtocolHandler ["http-nio-8076"]
-[33m[2025-03-06 08:45:09.687][0;39m [34mINFO [0;39m
+[33m[2025-03-05 20:36:23.688][0;39m [34mINFO [0;39m
                 [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat started on port 8076 (http) with context path '/api/mta-txn-monitor'
-[33m[2025-03-06 08:45:09.703][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Started MtaMonitorApplication in 4.139 seconds (process running for 4.723)
-[33m[2025-03-06 09:00:00.301][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Running update
-[33m[2025-03-06 12:00:00.430][0;39m [34mINFO [0;39m
-                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Running update
+[33m[2025-03-05 20:36:23.706][0;39m [34mINFO [0;39m
+                [[36mmta-txn-monitor-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Started MtaMonitorApplication in 5.019 seconds (process running for 5.608)

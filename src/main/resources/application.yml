@@ -46,10 +46,10 @@ api:
 # Database Settings
 spring:
   datasource:
-#    username: postgres
-#    password: root
-    username: system
-    password: system
+    username: postgres
+    password: root
+#    username: system
+#    password: system
     url: jdbc:postgresql://localhost/isdb_outpost_troop
   jpa:
     hibernate:

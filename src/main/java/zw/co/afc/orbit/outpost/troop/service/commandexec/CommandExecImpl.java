@@ -1,9 +1,7 @@
 package zw.co.afc.orbit.outpost.troop.service.commandexec;
 
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import zw.co.afc.orbit.outpost.troop.dto.request.ServerDetails;
 
 import java.io.BufferedReader;
 import java.io.IOException;

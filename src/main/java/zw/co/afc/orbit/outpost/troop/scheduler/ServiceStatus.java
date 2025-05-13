@@ -19,9 +19,12 @@ import zw.co.afc.orbit.outpost.troop.service.iface.ApplicationService;
 import zw.co.afc.orbit.outpost.troop.service.iface.NotificationService;
 import zw.co.afc.orbit.outpost.troop.service.iface.ServerService;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 
 @Component
@@ -37,66 +40,109 @@ public class ServiceStatus {
     private final NotificationService notificationService;
     private final IncidentRepository incidentRepository;
 
-//    @Scheduled(fixedRate = 20000)
-//    public void runServiceStatusCheck(){
-//        log.info("\uD83D\uDD14 THE SCHEDULER IS RUNNING \uD83D\uDD14");
-//        List<Application> applications = applicationRepository.findAll();
-//        for (Application application : applications) {
-//            String getProcessId = "cd " + application.getJarFileLocation() + " && pgrep -f -d ' ' " + application.getName() + "-0.0.1-SNAPSHOT.jar";
-//            List<String> processIds = applicationService.getProcessId(getProcessId);
-//            if (processIds.isEmpty()) {
-//                log.error("\uD83D\uDED1 " + application.getName() + " is not running");
-//                String logFilePath = application.getLogFileLocation() + "/" + application.getName() + "-temp.log";
-//                String startApplication = "nohup java -jar " + application.getJarFileLocation() + "/" + application.getName() + "-0.0.1-SNAPSHOT.jar > " + logFilePath + " 2>&1 &";
-//
-//                applicationService.startApplication(startApplication);
-//                // send notification via whatsapp
-//                // add it to database so that it is logged as a case where a service stopped
-//                // maybe add a check -> maybe the service should be kept offline? for some odd reason
-//            } else {
-//                log.info("\uD83D\uDFE2 " + application.getName() + " is running with process IDs: " + processIds );
-//            }
-//        }
-//
-//        log.info("Checking disks");
-//        DiskMetrics disks = serverService.displaySpaceMetrics();
-//        for (DiskInfo disk : disks.disks()) {
-//            if (disk.isMainDisk()) {
-//                // Log the details of the main disk
-//                log.info("Main Disk: "+ disk.name() +" - Total: "+disk.totalGB()+" GB, Used: "+disk.usedGB()+" GB, Free: "+disk.freeGB()+" GB, Usage: "+disk.usagePercentage()+"%");
-//
-//                // Check the usage percentage and log accordingly
-//                double usage = disk.usagePercentage();
-//                BigDecimal usageFormatted = new BigDecimal(usage).setScale(2, RoundingMode.HALF_UP);
-//
-//                if (usage > 80) {
-//                    log.error("\uD83D\uDED1 Main disk usage is high: {}% used", usageFormatted);
-//                } else if (usage > 50) {
-//                    log.warn("\uD83D\uDFE0 Main disk usage is moderate: {}% used", usageFormatted);
-//                } else {
-//                    log.info("\uD83D\uDFE2 Main disk usage is okay: {}% used", usageFormatted);
-//                }
-//            }
-//        }
-//
-//
-//    }
-
     @Scheduled(fixedRate = 20000)
     public void runServiceStatusCheck() {
-        log.info("\uD83D\uDD14 THE SCHEDULER IS RUNNING \uD83D\uDD14");
+        log.info("🔔 THE SCHEDULER IS RUNNING 🔔");
 
         List<Application> applications = applicationRepository.findAll();
-        for (Application application : applications) {
-            checkApplicationStatus(application);
+
+        // Identify down applications
+        List<Application> downApps = applications.stream()
+                .filter(app -> {
+                    String jarPath = app.getJarFileLocation() + "/" + app.getName() + "-0.0.1-SNAPSHOT.jar";
+                    String getProcessId = "pgrep -f '" + jarPath + "'";
+                    List<String> processIds = applicationService.getProcessId(getProcessId);
+                    return processIds.isEmpty();
+                }).toList();
+
+        boolean allDown = downApps.size() == applications.size();
+        boolean startup1Down = downApps.stream().anyMatch(app -> app.getStartupOrder() == 1);
+        boolean startup2Down = downApps.stream().anyMatch(app -> app.getStartupOrder() == 2);
+
+        if (allDown || startup1Down || startup2Down) {
+            log.warn("🚨 Restarting services in startup order with waits (either all down or critical services down)");
+
+            applications.stream()
+                    .sorted(Comparator.comparing(Application::getStartupOrder))
+                    .forEach(app -> {
+                        checkApplicationStatus(app);
+
+                        try {
+                            if (app.getStartupOrder() == 1) {
+                                log.info("⏱ Waiting 30 seconds after starting {}", app.getName());
+                                Thread.sleep(30_000);
+                            } else if (app.getStartupOrder() == 2) {
+                                log.info("⏱ Waiting 10 seconds after starting {}", app.getName());
+                                Thread.sleep(10_000);
+                            }
+                        } catch (InterruptedException e) {
+                            Thread.currentThread().interrupt();
+                            log.error("Interrupted during wait after startup order {}", app.getStartupOrder(), e);
+                        }
+                    });
+
+
+        } else {
+            log.info("⚙️ Some services are down, but startup order 1 & 2 are UP. Restarting only the down services.");
+            downApps.forEach(this::checkApplicationStatus);  // restart individually with no delay
         }
 
-        checkDiskUsage();
+        checkDiskUsageWithCommand();  // Optional: Always check disk usage
     }
 
+//    @Scheduled(fixedRate = 20000)
+//    public void runServiceStatusCheck() {
+//        log.info("\uD83D\uDD14 THE SCHEDULER IS RUNNING \uD83D\uDD14");
+//
+//        List<Application> applications = applicationRepository.findAll();
+//        /// //
+//        boolean allDown = applications.stream().allMatch(app -> {
+//            String jarPath = app.getJarFileLocation() + "/" + app.getName() + "-0.0.1-SNAPSHOT.jar";
+//            String getProcessId = "pgrep -f '" + jarPath + "'";
+//            List<String> processIds = applicationService.getProcessId(getProcessId);
+//            return processIds.isEmpty();
+//        });
+//
+//        if (allDown) {
+//            log.warn("🚨 All services are down. Restarting in order...");
+//            applications.sort(Comparator.comparing(Application::getStartupOrder));
+//            /// /
+//
+//            for (Application application : applications) {
+//                checkApplicationStatus(application);
+//
+//                if (application.getStartupOrder() == 1) {
+//                    try {
+//                        log.info("⏱ Waiting 30 seconds after starting {}", application.getName());
+//                        Thread.sleep(30_000); // Wait for 30 seconds
+//                    } catch (InterruptedException e) {
+//                        Thread.currentThread().interrupt();
+//                        log.error("Interrupted while waiting after startupOrder 1", e);
+//                    }
+//                }else if (application.getStartupOrder() == 2) {
+//                    try {
+//                        log.info("⏱ Waiting 10 seconds after starting {}", application.getName());
+//                        Thread.sleep(10_000); // Wait for 10 seconds
+//                    } catch (InterruptedException e) {
+//                        Thread.currentThread().interrupt();
+//                        log.error("Interrupted while waiting after startupOrder 2", e);
+//                    }
+//                }
+//            }
+//
+////        checkDiskUsage();
+//
+//        }
+//        checkDiskUsageWithCommand();
+//    }
+
     private void checkApplicationStatus(Application application) {
-        String getProcessId = "cd " + application.getJarFileLocation() +
-                " && pgrep -f -d ' ' " + application.getName() + "-0.0.1-SNAPSHOT.jar";
+//        String getProcessId = "cd " + application.getJarFileLocation() +
+//                " &&  -f -d ' ' " + application.getName() + "-0.0.1-SNAPSHOT.jar";
+
+        String jarPath = application.getJarFileLocation() + "/" + application.getName() + "-0.0.1-SNAPSHOT.jar";
+        String getProcessId = "pgrep -f '" + jarPath + "'";
+
         List<String> processIds = applicationService.getProcessId(getProcessId);
 
         if (processIds.isEmpty()) {
@@ -104,13 +150,16 @@ public class ServiceStatus {
             String logFilePath = application.getLogFileLocation() + "/" + application.getName() + "-temp.log";
             String startApplication = "nohup java -jar " + application.getJarFileLocation() + "/" + application.getName() + "-0.0.1-SNAPSHOT.jar > " + logFilePath + " 2>&1 &";
 
-//            applicationService.startApplication(startApplication);
+            log.info("🚀 Starting service: {}", application.getName());
+            applicationService.startApplication(startApplication);
 
             if (shouldSendAlert(application.getName())) {
-                sendAlert(application.getName() + " is down!", "CRITICAL");
+                //sendAlert(application.getName() + " is down!", "CRITICAL");
                 recordIncident(application.getName(), "SERVICE_DOWN");
             }
+
         } else {
+            //sendAlert(application.getName() + " is running!",null);
             log.info("\uD83D\uDFE2 {} is running with process IDs: {}", application.getName(), processIds);
         }
     }
@@ -124,7 +173,7 @@ public class ServiceStatus {
 
                 if (usage > 80 && shouldSendAlert("Main Disk")) {
                     log.error("\uD83D\uDED1 Main disk usage is high: {}% used", usageFormatted);
-                    sendAlert("Disk usage is critical: " + usageFormatted + "%", "HIGH");
+                    //sendAlert("Disk usage is critical: " + usageFormatted + "%", "HIGH");
                     recordIncident("Main Disk", "DISK_HIGH_USAGE");
                 }
             }
@@ -133,13 +182,18 @@ public class ServiceStatus {
 
     private boolean shouldSendAlert(String alertMessage) {
         LocalDateTime lastAlert = alertRepository.findLatestAlertTimeByAlertMessage(alertMessage);
-        if (lastAlert == null || lastAlert.isBefore(LocalDateTime.now().minusMinutes(30))) {
+        if (lastAlert == null || lastAlert.isBefore(LocalDateTime.now().minusMinutes(10))) {
             return true;
         }
         return false;
     }
 
     private void sendAlert(String message, String priority) {
+
+        if (priority == null) {
+            priority = "NORMAL"; // Default value
+        }
+
         List<Garrison> recipients = garrisonRepository.findAllByActiveTrue();
 
         for (Garrison user : recipients) {
@@ -152,9 +206,9 @@ public class ServiceStatus {
             alertRepository.save(alert);
 
             // Send via WhatsApp, Email, or SMS
-            notificationService.sendWhatsAppAlert(user, message);
+            //notificationService.sendWhatsAppAlert(user, message);
             log.info("Initializing ");
-//            notificationService.sendEmailAlert(user, message);
+            notificationService.sendEmailAlert(user, message);
         }
     }
 
@@ -168,6 +222,44 @@ public class ServiceStatus {
             incident.setPriority("HIGH");
             incident.setCreatedAt(LocalDateTime.now());
             incidentRepository.save(incident);
+        }
+    }
+
+    private void checkDiskUsageWithCommand() {
+        try {
+            Process process = Runtime.getRuntime().exec("df -h");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+//                log.info(line);  // Print df -h output
+
+                // Check if the line contains /dev/sda3 (the main disk)
+                if (line.startsWith("/dev/sda3")) {
+                    String[] parts = line.split("\\s+"); // Split by whitespace
+
+                    if (parts.length >= 5) {
+                        String usageStr = parts[4];  // The 5th column (index 4) is the usage percentage
+                        int usage = Integer.parseInt(usageStr.replace("%", "")); // Remove % and parse to integer
+
+                        log.info("📊 Main Disk (/dev/sda3) Usage: {}%", usage);
+
+                        // Check if usage exceeds threshold
+                        if (usage < 80) {
+                            log.error("\uD83D\uDED1 Main disk usage is high: {}% used", usage);
+                            //sendAlert("Disk usage is critical: " + usage + "%", "HIGH");
+                            recordIncident("Main Disk", "DISK_HIGH_USAGE");
+                        }
+                    }
+                }
+            }
+
+            int exitCode = process.waitFor();
+            if (exitCode != 0) {
+                log.error("df -h command failed with exit code: {}", exitCode);
+            }
+        } catch (Exception e) {
+            log.error("🚨 Error executing df -h: ", e);
         }
     }
 

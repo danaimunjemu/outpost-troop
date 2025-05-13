@@ -1,6 +1,5 @@
 package zw.co.afc.orbit.outpost.troop.service.impl;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +23,7 @@ import java.util.Map;
 public class NotificationServiceImpl implements NotificationService {
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
-    private final KafkaTemplate<String, String> kafkaTemplate;
+    private final KafkaTemplate<String, Map<String, Object>> kafkaTemplate;
     private static final String WEBHOOK_URL = "https://integrations.afcholdings.co.zw/wtest/webhook/external/alert";
 
     @Override
@@ -79,24 +78,16 @@ public class NotificationServiceImpl implements NotificationService {
                 message,
                 "SLA",
                 null,
-                null
+                null,
+                "SERVICE"
         );
+        log.info("Sending alert to: {}", user.getEmail());
 
-        String notificationRequestString = null;
-        try {
-            notificationRequestString = objectMapper.writeValueAsString(notificationRequest);
-            log.info("Successful conversion");
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
+        Map notificationRequestString = objectMapper.convertValue(notificationRequest, Map.class);
+        log.info("Successful conversion");
 
-        kafkaTemplate.send("notification-notify", notificationRequestString).whenComplete(((sendResult, throwable) -> {
-            if (throwable ==null) {
-                System.out.println(sendResult);
-            } else {
-                throwable.printStackTrace();
-            }
-        } ));
+        kafkaTemplate.send("notification-notify", notificationRequestString);
         return true;
     }
+
 }

@@ -10,6 +10,7 @@ public record NotificationRequest(
         String message,
         String source,
         String template,
-        Map<String, Object> templateData
+        Map<String, Object> templateData,
+        String channel
 ) {
 }

@@ -23,5 +23,6 @@ public class Application {
     private String name;
     private String jarFileLocation;
     private String logFileLocation;
+    private Integer startupOrder;
 
 }

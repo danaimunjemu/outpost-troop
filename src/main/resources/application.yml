@@ -6,22 +6,6 @@ server:
   servlet:
     context-path: /api/troop
 
-
-
-eureka:
-  client:
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
-    should-unregister-on-shutdown: false
-    enabled: false  # TODO: enable eureka discovery
-  instance:
-    prefer-ip-address: true
-
-
 ate:
   services:
     termius-clone:
@@ -36,7 +20,7 @@ api:
     user-management:
       url: "http://192.168.0.14:8106"
     orbit-user-service:
-      url: "http://192.168.4.14:7000"
+      url: "http://14.14:7000"
       endpoint:
         search: "/user-service/search"
       mock: false # if true: authenticate via db
@@ -46,11 +30,12 @@ api:
 # Database Settings
 spring:
   datasource:
-    username: postgres
-    password: root
-#    username: system
-#    password: system
-    url: jdbc:postgresql://localhost/isdb_outpost_troop
+#    username: postgres
+#    password: root
+    username: system
+    password: system
+    url: jdbc:postgresql://192.168.4.13/isdb_outpost_troop
+#    url: jdbc:postgresql://localhost/isdb_outpost_troop
   jpa:
     hibernate:
       ddl-auto: none
@@ -63,7 +48,8 @@ spring:
       max-request-size: 10MB
       enabled: true
   application:
-    name: sla-service
+#    name: sla-service
+    name: troop
   kafka:
     bootstrap-servers: 192.168.4.14:9092 # production
 #    bootstrap-servers: localhost:9092 # development
@@ -88,5 +74,14 @@ management:
       enabled: true
     prometheus:
       enabled: true
+
+
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: INFO
+
 
 

@@ -1,0 +1,97 @@
+[33m[2025-03-17 09:02:20.335][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting TroopApplication using Java 17.0.8 with PID 39780 (C:\Users\Pestalos\Documents\WORKFILES\Outpost-troop\outpost-troop\target\classes started by Pestalos in C:\Users\Pestalos\Documents\WORKFILES\Outpost-troop\outpost-troop)
+[33m[2025-03-17 09:02:20.336][0;39m [39mDEBUG[0;39m
+                [[36msla-service[0;39m, [39mtraceId[0;39m=[31mNONE[0;39m, [39mspanId[0;39m=NONE] - Running with Spring Boot v3.4.3, Spring v6.2.3
+[33m[2025-03-17 09:02:20.336][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - No active profile set, falling back to 1 default profile: "default"
+[33m[2025-03-17 09:02:21.696][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[33m[2025-03-17 09:02:21.829][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Finished Spring Data repository scanning in 123 ms. Found 6 JPA repository interfaces.
+[33m[2025-03-17 09:02:22.880][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Tomcat initialized with port 8113 (http)
+[33m[2025-03-17 09:02:22.894][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing ProtocolHandler ["http-nio-8113"]
+[33m[2025-03-17 09:02:22.895][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting service [Tomcat]
+[33m[2025-03-17 09:02:22.896][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Starting Servlet engine: [Apache Tomcat/10.1.36]
+[33m[2025-03-17 09:02:22.976][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Initializing Spring embedded WebApplicationContext
+[33m[2025-03-17 09:02:22.976][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Root WebApplicationContext: initialization completed in 2587 ms
+[33m[2025-03-17 09:02:23.364][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - HikariPool-1 - Starting...
+[33m[2025-03-17 09:02:24.430][0;39m [31mWARN [0;39m
+                [[36msla-service[0;39m, [31mtraceId[0;39m=[31mNONE[0;39m, [31mspanId[0;39m=NONE] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+[33m[2025-03-17 09:02:24.434][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - Stopping service [Tomcat]
+[33m[2025-03-17 09:02:24.456][0;39m [34mINFO [0;39m
+                [[36msla-service[0;39m, [34mtraceId[0;39m=[31mNONE[0;39m, [34mspanId[0;39m=NONE] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[33m[2025-03-17 09:02:24.480][0;39m [1;31mERROR[0;39m
+                [[36msla-service[0;39m, [1;31mtraceId[0;39m=[31mNONE[0;39m, [1;31mspanId[0;39m=NONE] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'liquibase' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at zw.co.afc.orbit.outpost.troop.TroopApplication.main(TroopApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 10 common frames omitted
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 17 common frames omitted
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:259)
+	at liquibase.Scope.lambda$child$0(Scope.java:191)
+	at liquibase.Scope.child(Scope.java:200)
+	at liquibase.Scope.child(Scope.java:190)
+	at liquibase.Scope.child(Scope.java:169)
+	at liquibase.Scope.child(Scope.java:257)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:250)
+	... 19 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:352)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:254)
+	... 25 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 37 common frames omitted

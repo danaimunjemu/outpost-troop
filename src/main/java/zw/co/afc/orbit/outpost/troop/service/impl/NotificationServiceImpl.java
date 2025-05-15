@@ -79,7 +79,9 @@ public class NotificationServiceImpl implements NotificationService {
                 "SLA",
                 null,
                 null,
-                "SERVICE"
+                "SERVICE",
+                 true
+
         );
         log.info("Sending alert to: {}", user.getEmail());
 

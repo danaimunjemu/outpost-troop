@@ -11,6 +11,7 @@ public record NotificationRequest(
         String source,
         String template,
         Map<String, Object> templateData,
-        String channel
+        String channel,
+        boolean isHtml
 ) {
 }

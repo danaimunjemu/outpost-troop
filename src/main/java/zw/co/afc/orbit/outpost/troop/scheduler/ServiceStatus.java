@@ -137,21 +137,6 @@ public class ServiceStatus {
         }
     }
 
-//    private void checkDiskUsage() {
-//        DiskMetrics disks = serverService.displaySpaceMetrics();
-//        for (DiskInfo disk : disks.disks()) {
-//            if (disk.isMainDisk()) {
-//                double usage = disk.usagePercentage();
-//                BigDecimal usageFormatted = new BigDecimal(usage).setScale(2, RoundingMode.HALF_UP);
-//
-//                if (usage < 80 && shouldSendAlert("Main Disk")) {
-//                    log.error("\uD83D\uDED1 Main disk usage is high: {}% used", usageFormatted);
-//                    recordIncident("Main Disk", "DISK_HIGH_USAGE");
-//                }
-//            }
-//        }
-//    }
-
     private boolean shouldSendAlert(String alertMessage) {
         LocalDateTime lastAlert = alertRepository.findLatestAlertTimeByAlertMessage(alertMessage);
         if (lastAlert == null || lastAlert.isBefore(LocalDateTime.now().minusMinutes(10))) {
@@ -176,7 +161,7 @@ public class ServiceStatus {
             // Send via WhatsApp, Email, or SMS
             //notificationService.sendWhatsAppAlert(user, message);
             log.info("Initializing ");
-            notificationService.sendEmailAlert(user, message);
+            notificationService.sendEmailAlert(user,"Service & Disk Status Report", message);
         }
     }
 
@@ -212,15 +197,7 @@ public class ServiceStatus {
 
                         log.info("📊 Main Disk (/dev/sda3) Usage: {}%", usage);
 
-                        // Check if usage exceeds threshold
-//                        if (usage < 80) {
-//                            log.error("\uD83D\uDED1 Main disk usage is high: {}% used", usage);
-//                            statusReport.append("<li> Disk /dev/sda3 usage: ").append(usage).append("%<li>");
-//
-//                            //sendAlert("Disk usage is critical: " + usage + "%", "HIGH");
-//                            recordIncident("Main Disk", "DISK_HIGH_USAGE");
-//                        }
-                        if (usage < 80) {
+                        if (usage > 60) {
                             if (diskUsageAlertCount < MAX_DISK_ALERTS && shouldSendAlert("Main Disk")) {
                                 log.error("🚨 Main disk usage is high: {}% used", usage);
                                 statusReport.append("<li> Disk /dev/sda3 usage: ").append(usage).append("%<li>");

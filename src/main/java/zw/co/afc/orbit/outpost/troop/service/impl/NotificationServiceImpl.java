@@ -69,17 +69,18 @@ public class NotificationServiceImpl implements NotificationService {
     }
 
     @Override
-    public boolean sendEmailAlert(Garrison user, String message) {
+    public boolean sendEmailAlert(Garrison user, String subject, String message) {
         log.info("Processing email alert");
         NotificationRequest notificationRequest = new NotificationRequest(
                 "DEFAULT",
                 List.of(user.getEmail()),
-                "OUTPOST ALERT",
+               subject,
+               // "OUTPOST ALERT",
                 message,
-                "SLA",
+                "TROOP",
                 null,
                 null,
-                "SERVICE",
+                "EMAIL",
                  true
 
         );
